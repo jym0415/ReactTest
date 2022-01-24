@@ -1,0 +1,31 @@
+#navToggler:before,
+#navToggler:after{
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: black;
+    margin: 3px 0;
+    transition: 0.5s;
+}
+#navToggler{ outline: none; padding: 0; 
+    max-width: 50px; 
+    min-width: 30px; 
+    width: 15%;
+}
+/*최상위로 올리기*/
+button#navToggler.navbar-toggler:focus{
+    box-shadow: none !important; 
+}
+
+#navToggler .navbar-toggler-icon {display: none;}
+#navToggler[data-state='true']::before{
+    transform: rotate(-45deg) translateY(3px);
+}
+
+#navToggler[data-state='true']::after{
+    transform: rotate(45deg) translateY(-3px);;
+}
+
+#gnb[data-open='true']{
+    display: block !important;
+}
