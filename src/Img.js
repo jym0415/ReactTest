@@ -19,3 +19,4 @@ class Img extends Component{
 
 }
 export default Img;
+//container < low <col  공식!
